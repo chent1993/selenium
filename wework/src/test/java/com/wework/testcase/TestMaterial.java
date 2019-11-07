@@ -39,6 +39,6 @@ public class TestMaterial {
     }
     @AfterClass
     public static void  afterAll(){
-      //  app.quit();
+        app.quit();
     }
 }

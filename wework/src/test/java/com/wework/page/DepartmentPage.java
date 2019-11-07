@@ -3,9 +3,6 @@ package com.wework.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-import java.util.ArrayList;
-import java.util.EmptyStackException;
 import java.util.List;
 
 public class DepartmentPage extends BasePage{

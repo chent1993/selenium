@@ -22,15 +22,25 @@ public class TestDepartment {
 
     }
 
+    /**
+     * 添加部门
+     */
     @Test
     public void add(){
        app.toDepartmentAdd().add("测试六部","测试一部");
     }
 
+    /**
+     * 删除部门
+     */
     @Test
     public void delete(){
         app.toDepartmentAdd().add("测试四部","Test").delete("测试四部");
     }
+
+    /**
+     *上移
+     */
     @Test
     public void up(){
         String departName = "测试一部";
@@ -39,11 +49,18 @@ public class TestDepartment {
         assertThat(app.toDepartment().getPosition(departName),equalTo(old-1));
 
     }
+
+    /**
+     * 下移
+     */
     @Test
     public void down(){
         app.toDepartment().down("测试一部");
     }
 
+    /**
+     * 修改部门名称
+     */
     @Test
     public void update(){
         String text = "修改名称成功";
